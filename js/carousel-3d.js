@@ -2,11 +2,11 @@ let carousel = document.querySelector('.carousel');
 let cells = carousel.querySelectorAll('.carousel_cell');
 let cellCount = 6;
 let selectedIndex = 0;
-let cellWidth = carousel.offsetWidth;
-let radius, theta;
+let cellWidth;
+let radius, theta, angle;
 
-function rotateCarousel() {
-    let angle = theta * selectedIndex * -1;
+function changeCarousel() {
+    angle = theta * selectedIndex * -1;
     carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
         'rotateY(' + angle + 'deg)';
 }
@@ -14,18 +14,19 @@ function rotateCarousel() {
 let prevButton = document.querySelector('.previous-button');
 prevButton.addEventListener('click', function() {
     selectedIndex--;
-    rotateCarousel();
+    changeCarousel();
 });
 
 let nextButton = document.querySelector('.next-button');
 nextButton.addEventListener('click', function() {
     selectedIndex++;
-    rotateCarousel();
+    changeCarousel();
 });
 
 
-function changeCarousel() {
+function startCarousel() {
     theta = 360 / cellCount;
+    cellWidth = carousel.offsetWidth;
     radius = Math.round((cellWidth / 2) / Math.tan(Math.PI / cellCount));
     for (var i = 0; i < cells.length; i++) {
         var cell = cells[i];
@@ -37,7 +38,25 @@ function changeCarousel() {
             cell.style.transform = 'none';
         }
     }
-
-    rotateCarousel();
+    changeCarousel();
 }
-changeCarousel();
+startCarousel();
+
+
+window.addEventListener("resize", function() {
+    cellWidth = carousel.offsetWidth;
+    radius = Math.round((cellWidth / 2) / Math.tan(Math.PI / cellCount));
+    console.log("test");
+    carousel.style.transform = 'translateZ(' + -radius + 'px) ' +
+        'rotateY(' + angle + 'deg)';
+    for (var i = 0; i < cells.length; i++) {
+        var cell = cells[i];
+        if (i < cellCount) {
+            cell.style.opacity = 1;
+            let cellAngle = theta * i;
+            cell.style.transform = 'rotateY(' + cellAngle + 'deg) translateZ(' + radius + 'px)';
+        } else {
+            cell.style.transform = 'none';
+        }
+    }
+})
