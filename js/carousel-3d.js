@@ -1,6 +1,6 @@
 let carousel = document.querySelector('.carousel');
 let cells = carousel.querySelectorAll('.carousel_cell');
-let cellCount = 6;
+let cellCount = 5;
 let selectedIndex = 0;
 let cellWidth;
 let radius, theta, angle;
