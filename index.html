@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Société CREMET, Vente & Livraison de bois de chauffage basée à Couëron, 44220. Bois de chêne, hêtre et de charme. Livraison dans un rayon de 30km ou enlèvement sur place.">
+    <meta name="author" content="Olivier Simonneau">
+    <meta name="keywords" content="CREMET, Philippe, Philippe CREMET, Vente de bois, Bois, Bois de chauffage, Couëron, 44220, Chêne, Hêtre, Charme, Livraison" />
+    <title>Société CREMET</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="./images/wood.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+
+<body>
+    <div class="container">
+        <main class="">
+            <h1>Société CREMET</h1>
+            <h2>Vente & Livraison de bois de Chauffage basée à Couëron, 44220</h2>
+            <!-- <div id="information">
+                <div class="property-card">
+                    <div class="property-image" id="taille-card">
+                    </div>
+                    <div class="property-description">
+                        <h3>Vente</h3>
+                        <ul>
+                            <li>Bois de chêne</li>
+                            <li>Bois de Hêtre</li>
+                            <li>Bois de Charme</li>
+                        </ul>
+                        <p>Taille : 25, 33, 40 et 50cm</p>
+                        <img src="./images/down.png" alt="Icône Flèche Bas" class="downArrow">
+                        <p>Pour plus de renseignements veuillez me contacter !</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image" id="livraison-card">
+                    </div>
+                    <div class="property-description">
+                        <h3>Livraison</h3>
+                        <p>Livraison dans un rayon de 30km autour de Couëron.</p>
+                        <p>Possibilité d'enlèvement sur place avec rendez-vous.</p>
+                        <img src="./images/down.png" alt="Icône Flèche Bas" class="downArrow">
+                        <p>Rue des Eperviers, Lieu dit L'arête Couëron, 44220</p>
+                    </div>
+                </div>
+                <div class="property-card">
+                    <div class="property-image" id="contact-card">
+                    </div>
+                    <div class="property-description">
+                        <h3>Contact</h3>
+                        <p>Par téléphone ou par mail :</p>
+                        <p>06-07-09-75-42</p>
+                        <a href="tel:+33607097542"><img src="./images/phone.png" alt="Icône Téléphone" id="phoneIcon"></a>
+                        <br>
+                        <img src="./images/down.png" alt="Icône Flèche Bas" class="downArrow">
+                        <p>philippe.cremet@wanadoo.fr</p>
+                        <a href="mailto:philippe.cremet@wanadoo.fr"><img src="./images/mail.png" alt="Icône Mail"></a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="scene">
+                <div class="carousel">
+                    <div class="carousel_cell">
+                        <h3>Vente</h3>
+                        <ul>
+                            <li>Bois de chêne</li>
+                            <li>Bois de Hêtre</li>
+                            <li>Bois de Charme</li>
+                        </ul>
+                        <p>Taille : 25, 33, 40 et 50cm</p>
+                        <p>Pour plus de renseignements veuillez me contacter !</p>
+                    </div>
+                    <div class="carousel_cell">2</div>
+                    <div class="carousel_cell">3</div>
+                    <div class="carousel_cell">4</div>
+                    <div class="carousel_cell">5</div>
+                    <div class="carousel_cell">6</div>
+                </div>
+            </div>
+
+            <div class="carousel-options">
+                <p>
+                    <button class="previous-button">Previous</button>
+                    <button class="next-button">Next</button>
+                </p>
+            </div>
+            <div id="map">
+                <div id="mapId"></div>
+                <a id="location" href="https://www.google.fr/maps/place/Cremet+Philippe/@47.2124961,-1.7570426,17z/data=!3m1!4b1!4m5!3m4!1s0x480591f6d4501397:0xe8b8d95138d5e42b!8m2!3d47.2124925!4d-1.7548539" target="_blank">Rue des Eperviers, Lieu dit L'arête Couëron, 44220</a>
+            </div>
+        </main>
+    </div>
+    <script src="./js/carousel-3d.js"></script>
+    <script src="./js/leaflet.js"></script>
+</body>
+
+</html>
