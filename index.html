@@ -17,70 +17,69 @@
 </head>
 
 <body>
-    <div class="container">
-        <main class="">
-            <h1>Société CREMET</h1>
-            <h2>Vente & Livraison de bois de Chauffage basée à Couëron, 44220</h2>
-            <div class="scene">
-                <div class="arrow previous-button"></div>
-                <div class="arrow next-button"></div>
-                <div class="carousel">
-                    <div class="carousel_cell">
-                        <h1>Cremet Philippe</h1>
-                        <h2>Vente de Bois de chauffage</h2>
-                        <h2><a id="location" href="https://www.google.fr/maps/place/Cremet+Philippe/@47.2124961,-1.7570426,17z/data=!3m1!4b1!4m5!3m4!1s0x480591f6d4501397:0xe8b8d95138d5e42b!8m2!3d47.2124925!4d-1.7548539" target="_blank">Rue des Eperviers, Lieu dit L'arête Couëron, 44220</a></h2>
-                        <div>
-                            <img src="./images/forest.png" alt="Icône Map" id="forestIcon">
-                        </div>
+    <main class="">
+        <div class="scene">
+            <div class="arrow previous-button"></div>
+            <div class="arrow next-button"></div>
+            <div class="carousel">
+                <div class="carousel_cell">
+                    <h1>Cremet Philippe</h1>
+                    <h2>Vente de Bois de chauffage</h2>
+                    <h2><a id="location" href="https://www.google.fr/maps/place/Cremet+Philippe/@47.2124961,-1.7570426,17z/data=!3m1!4b1!4m5!3m4!1s0x480591f6d4501397:0xe8b8d95138d5e42b!8m2!3d47.2124925!4d-1.7548539" target="_blank">Rue des Eperviers, Lieu dit L'arête Couëron, 44220</a></h2>
+                    <div>
+                        <img src="./images/forest.png" alt="Icône Map" id="forestIcon">
                     </div>
-                    <div class="carousel_cell">
-                        <h1>Types de bois en vente</h1>
-                        <ul>
-                            <li>Bois de chêne</li>
-                            <li>Bois de Hêtre</li>
-                            <li>Bois de Charme</li>
-                        </ul>
-                        <p>Pour plus de renseignements veuillez me contacter !</p>
+                </div>
+                <div class="carousel_cell">
+                    <h1>Types de bois en vente</h1>
+                    <ul>
+                        <li>Bois de chêne</li>
+                        <li>Bois de Hêtre</li>
+                        <li>Bois de Charme</li>
+                    </ul>
+                    <div>
+                        <img src="./images/wood-type.png" alt="Icône Bois" id="woodTypeIcon">
                     </div>
-                    <div class="carousel_cell">
-                        <h1>Taille du bois</h1>
-                        <ul>
-                            <li>25 Cm</li>
-                            <li>33 Cm</li>
-                            <li>40 Cm</li>
-                            <li>50 Cm</li>
-                        </ul>
-                        <div>
-                            <img src="./images/design.png" alt="Icône Design" id="designIcon">
-                        </div>
-                        <p>Pour plus de renseignements veuillez me contacter !</p>
+                    <p>Pour plus de renseignements veuillez me contacter !</p>
+                </div>
+                <div class="carousel_cell">
+                    <h1>Taille du bois</h1>
+                    <ul>
+                        <li>25 Cm</li>
+                        <li>33 Cm</li>
+                        <li>40 Cm</li>
+                        <li>50 Cm</li>
+                    </ul>
+                    <div>
+                        <img src="./images/design.png" alt="Icône Design" id="designIcon">
                     </div>
-                    <div class="carousel_cell">
-                        <h1>Livraison & Retrait</h1>
-                        <p>Livraison dans un rayon de 30km autour de Couëron.</p>
-                        <div>
-                            <a href="#map"><img src="./images/map.png" alt="Icône Map" id="mapIcon"></a>
-                        </div>
-                        <p>Possibilité d'enlèvement sur place avec rendez-vous.</p>
+                    <p>Pour plus de renseignements veuillez me contacter !</p>
+                </div>
+                <div class="carousel_cell">
+                    <h1>Livraison & Retrait</h1>
+                    <p>Livraison dans un rayon de 30km autour de Couëron.</p>
+                    <div>
+                        <a href="#map"><img src="./images/map.png" alt="Icône Map" id="mapIcon"></a>
                     </div>
-                    <div class="carousel_cell">
-                        <h1>Contact</h1>
-                        <p>06-07-09-75-42</p>
-                        <div>
-                            <a href="tel:+33607097542"><img src="./images/phone.png" alt="Icône Téléphone" id="phoneIcon"></a>
-                        </div>
-                        <p>philippe.cremet@wanadoo.fr</p>
-                        <div>
-                            <a href="mailto:philippe.cremet@wanadoo.fr"><img src="./images/mail.png" alt="Icône Mail"></a>
-                        </div>
+                    <p>Possibilité d'enlèvement sur place avec rendez-vous.</p>
+                </div>
+                <div class="carousel_cell">
+                    <h1>Contact</h1>
+                    <p>06-07-09-75-42</p>
+                    <div>
+                        <a href="tel:+33607097542"><img src="./images/phone.png" alt="Icône Téléphone" id="phoneIcon"></a>
+                    </div>
+                    <p id="mailAdress">philippe.cremet@wanadoo.fr</p>
+                    <div>
+                        <a href="mailto:philippe.cremet@wanadoo.fr"><img src="./images/mail.png" alt="Icône Mail"></a>
                     </div>
                 </div>
             </div>
-            <div id="map">
-                <div id="mapId"></div>
-            </div>
-        </main>
-    </div>
+        </div>
+        <div id="map">
+            <div id="mapId"></div>
+        </div>
+    </main>
     <script src="./js/carousel-3d.js"></script>
     <script src="./js/leaflet.js"></script>
 </body>

@@ -1,0 +1,33 @@
+@media screen and (max-width: 690px) {
+    .arrow {
+        top: 38%;
+    }
+    .carousel_cell h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+    .carousel_cell h2 {
+        font-size: 1.3em;
+    }
+    .carousel_cell ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .carousel_cell li,
+    .carousel_cell p {
+        font-size: 1em;
+    }
+    .carousel_cell p {
+        margin: 12px 12px;
+    }
+    .previous-button {
+        left: -20px;
+    }
+    .next-button {
+        right: -20px;
+    }
+    #mailAdress {
+        font-size: 0.85em;
+    }
+}

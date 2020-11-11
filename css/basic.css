@@ -23,7 +23,6 @@ main {
 
 .arrow {
     position: absolute;
-    content: "";
     padding: 14px;
     box-shadow: 6px -6px 0 6px #0072bc inset;
     -webkit-box-shadow: 6px -6px #0072bc inset;
@@ -88,6 +87,15 @@ main {
     margin: 12px 0;
 }
 
+.carousel_cell a img {
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.carousel_cell a img:hover {
+    transform: scale(1.2);
+}
+
 #map {
     min-height: 45vh;
     min-width: 75%;
@@ -96,10 +104,4 @@ main {
 #mapId {
     min-height: 45vh;
     min-width: 75%;
-}
-
-#location {
-    display: block;
-    text-align: center;
-    font-size: 1.2em;
 }

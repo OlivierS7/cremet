@@ -1,5 +1,5 @@
 @import './basic.css';
-@import './largeScreen.css';
+@import './phoneQuery.css';
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -15,20 +15,6 @@ body {
 }
 
 @media screen and (max-width: 1160px) {
-    h1,
-    h2,
-    h3 a {
-        text-align: center;
-    }
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.3em;
-    }
-    #location {
-        width: 95vw;
-    }
     #map,
     #mapId {
         min-height: 50vh;
