@@ -10,7 +10,7 @@ main {
     width: 60vw;
     height: 400px;
     margin: 50px auto;
-    perspective: 150vw;
+    perspective: 160vw;
 }
 
 .carousel {
@@ -56,10 +56,11 @@ main {
     font-weight: bold;
     color: white;
     text-align: center;
-    background: linear-gradient(to right, rgba(155, 153, 150, 0.664), rgba(155, 153, 150, 0.664)), url('../images/background_cell.jpg');
+    background: linear-gradient(to right, rgba(155, 153, 150, 0.864), rgba(155, 153, 150, 0.864)), url('../images/background_cell.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    transition: transform .05s;
+    background-size: cover;
+    transition: transform .05s, opacity 2s;
     color: white;
 }
 
@@ -98,10 +99,10 @@ main {
 
 #map {
     min-height: 45vh;
-    min-width: 75%;
+    min-width: 95%;
 }
 
 #mapId {
     min-height: 45vh;
-    min-width: 75%;
+    min-width: 95%;
 }
