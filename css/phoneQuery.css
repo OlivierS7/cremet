@@ -31,3 +31,13 @@
         font-size: 0.85em;
     }
 }
+
+@media screen and (max-width: 325px) {
+    .scene {
+        height: 500px;
+    }
+    #mailAdress {
+        font-size: 0.8em;
+        margin: 0;
+    }
+}
